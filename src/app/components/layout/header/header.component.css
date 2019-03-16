@@ -1,0 +1,45 @@
+
+
+.header{
+    width: 100%;
+    height: 60px;
+    background-color: #1e1e1e;
+}
+    .header .container .slogan{
+        padding-top: 20px;
+    }
+        .header .container .slogan a:hover{
+            opacity: .7;
+        }
+    .header .container a{
+        text-decoration: none;
+        color: bisque
+    }
+
+    /* user connection */
+
+    /*  Navbar Links */
+    .header .container .myNavbar{
+        text-align: center;
+        padding: 20px;
+    }
+    .header .container .myNavbar .btn {
+        float: right;
+    }
+        .header .container .myNavbar a{
+            margin: 15px;
+        }
+
+
+    /*
+    .header .container .connexion{
+        
+        color: antiquewhite;
+        font-size: 12px;
+    }
+    
+    .header .container .connexion .btn{
+        font-size: 10px;
+    }
+
+    */

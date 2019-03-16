@@ -1,0 +1,28 @@
+
+    .container-fluid .row{
+        text-align: center;
+    }
+        .container-fluid .row .navigation{
+            background-color: #F3F3FA;
+            
+            display: inline-block;
+             
+        }
+            .container-fluid .row .navigation a{
+                text-decoration: none;
+                color: black;
+                line-height: 3em; 
+            }
+        .container-fluid .row .change{
+            background-color: #F8F8FF;
+            
+            padding: 50px;
+        }
+            .container-fluid .row .change label{
+                float: left;
+                margin: 15px;
+            }
+            .container-fluid .row .change .form-control{
+                
+                margin: 10px;
+            }

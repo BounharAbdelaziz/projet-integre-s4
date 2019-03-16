@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "parcelle": {
+    "father-angular": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,17 +13,20 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/parcelle",
+            "outputPath": "dist/father-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/assets/img"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/font-awesome/css/font-awesome.min.css"
             ],
             "scripts": [],
             "es5BrowserSupport": true
@@ -58,18 +61,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "parcelle:build"
+            "browserTarget": "father-angular:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "parcelle:build:production"
+              "browserTarget": "father-angular:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "parcelle:build"
+            "browserTarget": "father-angular:build"
           }
         },
         "test": {
@@ -103,7 +106,7 @@
         }
       }
     },
-    "parcelle-e2e": {
+    "father-angular-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -112,11 +115,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "parcelle:serve"
+            "devServerTarget": "father-angular:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "parcelle:serve:production"
+              "devServerTarget": "father-angular:serve:production"
             }
           }
         },
@@ -132,5 +135,5 @@
       }
     }
   },
-  "defaultProject": "parcelle"
+  "defaultProject": "father-angular"
 }

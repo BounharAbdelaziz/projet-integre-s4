@@ -1,4 +1,0 @@
-s21 : rapport de conception ( en respectant la page de garde) = analyse des besoins ( cahier de charge + conception uml + maquettes IHM + gestion de projet )
-
-s22-s28 :
-	1- rapport global ( en ) qui enrichier et modifie le précédent rapport + 
