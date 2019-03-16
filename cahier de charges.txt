@@ -1,0 +1,15 @@
+*** 	Audience cible    ***
+
+	La plateforme est destinée à plusieurs acteurs dont :
+		
+		**	La banque centrale et les autres banques de prêts : Outil d'aide du suivi d'un projet pour s'assurer que toute les personne concernées par 		    l'expropriation auront leurs argents au bon moment. Par ailleurs, elle lui servira comme un outils d'aide à la décision pour les futurs projets, si 		    un projets n'avait pas respectée les délais de paiement, réclamation des personnes concernées concernant l'aboutissement du projet.
+
+		**	Les personnes concernées par l'expropriation en leur offrant un suivi de l'état d'avancement de leurs parcelles.
+		
+		**	Les cabinets topographique en leur offrant la possibilité et de suivre les différentes parcelles du plan, et de recevoir les différentes 		    réclamations des personnes concernées, et de modifier l'état des différentes parcelles en publiant le prix adopté, le bulletin officiel...
+
+**	User Stories	: Citoyens	**
+
+En tant que citoyens, je peux suivre l'état d'avancement d'une parcelle, donc je renseigne l'id de la parcelle.
+
+	
