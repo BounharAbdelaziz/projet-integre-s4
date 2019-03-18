@@ -1,14 +1,30 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-2 navigation">
-      <a href="">Ajout</a>
+      <a (click)="showAjout()">Ajout</a>
       <br>
-      <a href="">Modification</a>
+      <a  (click)="showModification()">Modification</a>
       <br>
-      <a href="">Suppression</a>
+      <a (click)="showSuppression()">Suppression</a>
     </div>
-    <div class="col-md-10 change">
-      
+
+    <!-- ajout -->
+    <div class="col-md-10 change" *ngIf="id==1">
+
+        <label>Identifient de la parcelle :</label>
+        <input type="text" class="form-control col-md-4" placeholder="Saisissez l'identifient" />
+        <hr class="col-md-5">
+
+        <label for="comment">Données relative à la parcelle :</label>
+        <textarea class="form-control col-md-4" rows="3" placeholder="Saisissez les données"></textarea>
+
+        <button class="btn btn-primary">Ajouter</button>
+
+    </div>
+
+    <!-- modification -->
+    <div class="col-md-10 change" *ngIf="id==2">
+
         <label>Identifient de la parcelle :</label>
         <input type="text" class="form-control col-md-4" placeholder="Saisissez l'identifient" />
         <hr class="col-md-5">
@@ -21,17 +37,23 @@
           <option>Donnée 3</option>
           <option>Donnée 4</option>
         </select>
-       
         <hr class="col-md-5">
 
-       
         <label for="comment">Nouvelle donnée :</label>
         <textarea class="form-control col-md-4" rows="3" placeholder="Saisissez la nouvelle donnée"></textarea>
-    
 
-      
     </div>
 
-    
+    <!-- suppression -->
+    <div class="col-md-10 change" *ngIf="id==3">
+
+        <label>Identifient de la parcelle :</label>
+        <input type="text" class="form-control col-md-4" placeholder="Saisissez l'identifient" />
+
+        <button class="btn btn-primary">Supprimer</button>
+
+    </div>
+
+
   </div>
 </div>

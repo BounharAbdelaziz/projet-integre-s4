@@ -7,9 +7,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UpdateparcelleComponent implements OnInit {
 
+  id=2;
   constructor() { }
 
   ngOnInit() {
+  }
+
+
+  showAjout(){
+    this.id = 1;
+    console.log(this.id);
+  }
+  showModification(){
+    this.id = 2;
+    console.log(this.id);
+  }
+  showSuppression(){
+    this.id = 3;
+    console.log(this.id);
   }
 
 }
